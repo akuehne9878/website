@@ -1,0 +1,34 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/htdocs/js/vendor/bootstrap.min.js" />
+        <item url="file://$PROJECT_DIR$/htdocs/js/main.min.js" />
+        <item url="file://$PROJECT_DIR$/htdocs/js/vendor/bootstrap.min.min.js" />
+        <item url="file://$PROJECT_DIR$/htdocs/js/vendor/blueimp-gallery.min.js" />
+        <item url="file://$PROJECT_DIR$/htdocs/js/vendor/jquery.bxslider.min.min.js" />
+        <item url="file://$PROJECT_DIR$/htdocs/js/vendor/jquery.blueimp-gallery.min.js" />
+        <item url="file://$PROJECT_DIR$/htdocs/js/vendor/blueimp-helper.min.js" />
+        <item url="file://$PROJECT_DIR$/htdocs/js/vendor/modernizr.custom.min.js" />
+        <item url="file://$PROJECT_DIR$/htdocs/js/vendor/jquery.throttle.min.js" />
+        <item url="file://$PROJECT_DIR$/htdocs/js/vendor/jquery.shuffle.min.js" />
+        <item url="file://$PROJECT_DIR$/htdocs/js/vendor/owl.carousel.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/htdocs/js/vendor/jquery.bxslider.min.min.js" />
+      <root url="file://$PROJECT_DIR$/htdocs/js/vendor/bootstrap.min.js" />
+      <root url="file://$PROJECT_DIR$/htdocs/js/vendor/bootstrap.min.min.js" />
+      <root url="file://$PROJECT_DIR$/htdocs/js/main.min.js" />
+      <root url="file://$PROJECT_DIR$/htdocs/js/vendor/blueimp-gallery.min.js" />
+      <root url="file://$PROJECT_DIR$/htdocs/js/vendor/jquery.bxslider.min.min.js" />
+      <root url="file://$PROJECT_DIR$/htdocs/js/vendor/jquery.blueimp-gallery.min.js" />
+      <root url="file://$PROJECT_DIR$/htdocs/js/vendor/blueimp-helper.min.js" />
+      <root url="file://$PROJECT_DIR$/htdocs/js/vendor/modernizr.custom.min.js" />
+      <root url="file://$PROJECT_DIR$/htdocs/js/vendor/jquery.throttle.min.js" />
+      <root url="file://$PROJECT_DIR$/htdocs/js/vendor/jquery.shuffle.min.js" />
+      <root url="file://$PROJECT_DIR$/htdocs/js/vendor/owl.carousel.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

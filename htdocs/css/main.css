@@ -1,0 +1,562 @@
+html, button, input, select, textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 3em 0;
+    padding: 0;
+    background-image: -webkit-linear-gradient(left, #fff, #ccc, #fff);
+    background-image: -moz-linear-gradient(left, #fff, #ccc, #fff);
+    background-image: -ms-linear-gradient(left, #fff, #ccc, #fff);
+    background-image: -o-linear-gradient(left, #fff, #ccc, #fff);
+    width: 50%;
+    left: 25%;
+    position: relative;
+    border: none;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   GENERAL STYLES
+   ========================================================================== */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+.col-md-4 {
+    padding-bottom: 20px;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/* 	=========================================================================
+	NAVIGATION
+	========================================================================= */
+.navbar-custom {
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.navbar-custom .nav li a {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-custom .navbar-text {
+    color: #ffffff;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.navbar-custom .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus {
+    color: #FFA500;
+}
+
+.navbar-custom .navbar-nav > .active > a, .navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+    color: #FFA500;
+    background-color: #ffffff;
+}
+
+.navbar-custom .navbar-nav > .open > a, .navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.navbar-custom .navbar-toggle {
+    border-color: #ffffff;
+    background-color: #000000;
+    z-index:100;
+}
+
+.navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
+    background-color: #000000;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.navbar-custom .navbar-link {
+    color: #ffffff;
+}
+
+.navbar-custom .navbar-link:hover {
+    color: #000000;
+}
+
+@media ( max-width: 767px) {
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+        color: #000000;
+    }
+
+    .navbar-collapse {
+        top: -9px;
+        width: 100%;
+        position: absolute;
+        height: auto;
+    }
+
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #000000;
+    }
+
+    .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #000000;
+        background-color: #ffffff;
+    }
+}
+
+/* 	=========================================================================
+	TITLES
+	========================================================================= */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+/* 	=========================================================================
+	PARAGRAPH & TYPOGRAPHIC
+	========================================================================= */
+p {
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+p.large {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.centered {
+    text-align: center;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-weight: 300;
+}
+
+pre {
+    background: #ebebeb;
+    border: none;
+    font-family: "Monaco";
+    font-size: 16px;
+    color: #666;
+    padding: 20px;
+    line-height: 28px;
+}
+
+small {
+    font-size: 12px;
+}
+
+blockquote, blockquote p {
+    line-height: 28px;
+    color: #999;
+    font-weight: 300;
+    font-style: italic;
+}
+
+blockquote {
+    position: relative;
+    margin: 0 0 40px -30px;
+    padding-left: 30px;
+    border-left: 5px solid #3498db;
+}
+
+blockquote cite {
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    font-size: 12px;
+    font-style: italic;
+    color: #333;
+    font-weight: 300;
+}
+
+blockquote cite:before {
+    content: "-- "
+}
+
+/* Images */
+.overflow-image {
+    margin-top: -65px;
+}
+
+/* 	=========================================================================
+	LINKS
+	========================================================================= */
+a {
+    color: #FFA500;
+    word-wrap: break-word;
+}
+
+a:hover, a:focus {
+    color: #ffffff;
+    text-decoration: none;
+    outline: 0;
+}
+
+/* 	=========================================================================
+	KONZERTE
+	========================================================================= */
+#konzerte {
+    background: #222222;
+    padding: 60px 0;
+    color: #f5f5f5;
+}
+
+/* event-list */
+ul.event-list-view, ul.single-event-view {
+    list-style: none !important;
+    margin: 1.5em 0 2em 0;
+    padding: 0;
+}
+
+li.event {
+    clear: both;
+    margin: 0 0.5em 1.5em 0.5em;
+    zoom: 1; /* Fix for IE 6+7 */
+}
+
+.event-date {
+    float: left;
+    margin: 0 0.4em 1.5em 0;
+}
+
+.event-list .multi-date {
+    background: url(../images/date-separator.png) center no-repeat;
+}
+
+.event-list .start-date, .event-list .end-date {
+    text-align: center;
+    width: 3.2em;
+    border-radius: 5px;
+    background-color: rgb(230, 230, 230);
+}
+
+.event-list .start-date {
+    float: left;
+    color: #000000;
+}
+
+.event-list .end-date {
+    margin-left: 3.8em;
+}
+
+.event-weekday {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.event-day {
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1em;
+    margin-bottom: -0.2em;
+}
+
+.event-month {
+    text-transform: uppercase;
+    font-size: 1.0em;
+    line-height: 1em;
+    padding: 0.4em 0;
+}
+
+.event-year {
+    font-size: 0.8em;
+    line-height: 0.8em;
+    letter-spacing: 0.1em;
+    padding-bottom: 0.3em;
+}
+
+.multi-day {
+    margin: 0 0 0 7.5em;
+}
+
+.single-day {
+    margin: 0 0 0 3.8em;
+}
+
+.event-title h3 {
+    clear: none;
+    margin: 0 !important;
+    padding: 0;
+}
+
+.event-time {
+    font-weight: bold;
+    padding-right: 0.8em;
+}
+
+.event-cat {
+    font-size: 0.95em;
+}
+
+.event-details {
+    font-size: 0.8em;
+}
+
+div.feed {
+    display: block;
+}
+
+div.feed a * {
+    vertical-align: middle;
+}
+
+div.feed img {
+    margin: 0 5px 0 2px;
+}
+
+div.filterbar, div.filterbar div {
+    clear both;
+    margin: 1em 0;
+    vertical-align: middle;
+}
+
+div.filterbar select.dropdown, div.filterbar ul.hlist, div.filterbar a.link {
+    margin: 0 3px;
+    vertical-align: middle;
+}
+
+div.filterbar ul.hlist li {
+    float: left;
+    list-style: none;
+    margin: 0;
+}
+
+div.filterbar ul.hlist li + li:before {
+    content: "|";
+    padding: 0 1px;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 50px;
+    background-color: #ffbf00;
+    color: #fff;
+    border: 1px;
+    border-color: #000000;
+}
+
+.btn:hover {
+    background-color: #e9af03;
+    outline: 0px;
+}
+
+.btn:focus {
+    background-color: #ffbf00;
+}
+
+.btn-group .active {
+    background-color: #e9af03;
+}
+
+.btn-group .btn:focus {
+
+}
+
+/* 	=========================================================================
+	BAND
+	========================================================================= */
+#band {
+    background: #ffffff;
+    padding: 60px 0;
+}
+
+.band-pic {
+    margin: 0 auto;
+}
+
+/* 	=========================================================================
+	FOTOS
+	========================================================================= */
+#fotos {
+    background: #222222;
+    padding: 60px 0;
+    color: #ffffff
+}
+
+#fotos ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#fotos ul li {
+    float: left;
+    min-height: 100%;
+    list-style: none;
+}
+
+/* 	=========================================================================
+	MUSIK
+	========================================================================= */
+#musik {
+    background: #ffffff;
+    padding: 60px 0;
+}
+
+/* 	=========================================================================
+	DOWNLOADS
+	========================================================================= */
+#downloads {
+    background: #222222;
+    padding: 60px 0;
+    color: #ffffff
+}
+
+/* 	=========================================================================
+	KONTAKT
+	========================================================================= */
+#kontakt {
+    background: #ffffff;
+    padding: 60px 0;
+}
+
+#kontakt .form {
+    padding: 30px 0;
+}
+
+#kontakt .fa {
+    color: #ffbf00;
+    margin-bottom: 10px;
+}
+
+/* 	=========================================================================
+	SinglePage: Nachricht gesendet
+	========================================================================= */
+.singlepage {
+    padding: 80px 0;
+}
+
+.singlepage_link {
+    color: #555555;
+    word-wrap: break-word;
+    text-decoration: underline;
+}
+
+.singlepage_link:hover, .singlepage_link:focus {
+    color: #FFA500;
+    text-decoration: underline;
+    outline: 0;
+}
+
+/* 	=========================================================================
+	FOOTER
+	========================================================================= */
+footer {
+    background: #2b2b2b;
+    padding: 25px 0 15px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+footer span.copyright {
+    line-height: 40px;
+    color: #888;
+    font-weight: 400;
+}
+
+footer span.copyright a {
+    color: #888;
+    border-bottom: 1px dotted;
+}
+
+footer span.copyright a:hover {
+    color: #ffbf00;
+    text-decoration: none;
+}
+
+footer h4 {
+    color: white;
+}
+
+.footer-nav {
+    margin-top: 10px;
+}
+
+.footer-nav li {
+    display: inline;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+@media screen and (max-width: 1050px) , screen and
+(max-device-width: 1050px) {
+    body .header {
+        background-attachment: scroll;
+    }
+}
+
+/*ipad portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .header {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #headerwrap h1 {
+        font-size: 80px;
+    }
+
+    #headerwrap p {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .singlepage {
+        padding: 30px 0;
+    }
+}
